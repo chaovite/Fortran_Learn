@@ -1,4 +1,4 @@
-! pratice using if
+! practice using if
 Program main
 implicit none
 real(kind=4) :: speed
