@@ -19,10 +19,10 @@ Program trap_simp_converge
       a = 0.0
       b = 3.0
       res_a = sin(b)-sin(a)            ! analytical results
-      100 format('Start and end times: ', G16.3, 1X, G16.3, /)
-      200 format(A16, 1X, A16,1X, A16,/)
-      300 format(I16, 1X, F20.16, 1X, F20.16, /)
-      write(*, 100) a, b
+      100 format('Start and end times: ', G16.3, 1X, G16.3)
+      200 format(A16, 2(1X, A16))
+      300 format(I16, 2(1X, F20.16))
+      write(*, "('Start and end times: ', G16.3, 1X, G16.3)") a, b
       write(1, 100) a, b
       write(*, 200) 'N-1', 'Trapezoid', 'Simpson'
       write(1, 200) 'N-1', 'Trapezoid', 'Simpson'
